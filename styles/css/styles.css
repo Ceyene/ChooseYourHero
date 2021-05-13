@@ -101,8 +101,74 @@ input {
   display: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+/* Making sections or elements visible */
+.visible {
+  opacity: 1;
+}
+
 /* ---- End of General Styles ---- */
 /*                                 */
+/*       Dark Themes      */
+.dark {
+  background-color: #222326;
+  color: #f3f5f8;
+}
+
+.dark i {
+  color: #f3f5f8;
+}
+
+.dark .text {
+  color: #f3f5f8;
+}
+
+.dark .navbar {
+  background-color: #222326;
+}
+
+.dark .menu {
+  background-color: #222326;
+}
+
+.dark .menu__item a {
+  color: #f3f5f8;
+}
+
+.dark .search {
+  border-color: #f3f5f8;
+  caret-color: #f3f5f8;
+}
+
+.dark .search__input {
+  color: #f3f5f8;
+}
+
+.dark .search i {
+  color: #f3f5f8;
+}
+
+.dark .small_text {
+  color: #f3f5f8;
+}
+
+.dark .prev,
+.dark .next {
+  background-color: #f3f5f8;
+  color: #222326;
+}
+
+.dark .prev:hover,
+.dark .next:hover {
+  background-color: #222326;
+  color: #f3f5f8;
+  border-color: #f3f5f8;
+}
+
+/*   End of Dark Themes   */
 /* ------------------------------- *
  * ------- Navigation Bar -------- *
  * ------------------------------- */
@@ -497,20 +563,6 @@ input {
     color: #f3f5f8;
   }
   /* Navbar Styles */
-  /* ------------------------------- *
-    *  Changes when doing scroll down  *
-    *  ------------------------------- */
-  html:not([data-scroll="0"]) {
-    /* Shadow at the bottom when doing scroll */
-  }
-  html:not([data-scroll="0"]) .navbar {
-    -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-            box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-    -webkit-transition: opacity 0.5s 0.5s ease;
-    transition: opacity 0.5s 0.5s ease;
-  }
-  /* End of Changes when scrolling down */
-  /*                                    */
   /* Menu Styles */
   .menu {
     padding: 0;

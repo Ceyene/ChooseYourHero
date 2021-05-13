@@ -127,19 +127,6 @@
 
   /* Navbar Styles */
 
-  /* ------------------------------- *
-    *  Changes when doing scroll down  *
-    *  ------------------------------- */
-  html:not([data-scroll="0"]) {
-    /* Shadow at the bottom when doing scroll */
-    .navbar {
-      box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-      transition: opacity 0.5s 0.5s ease;
-    }
-  }
-  /* End of Changes when scrolling down */
-  /*                                    */
-
   /* Menu Styles */
   .menu {
     padding: 0;
