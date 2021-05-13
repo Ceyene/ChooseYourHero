@@ -9,9 +9,9 @@
         "../scss/_components.scss",
         "../scss/components/_navbar.scss",
         "../scss/components/_searchbar.scss",
-        "../scss/_pages.scss",
-        "../scss/pages/_home.scss",
-        "../scss/pages/_sections.scss",
+        "../scss/_views.scss",
+        "../scss/views/_home.scss",
+        "../scss/views/_sections.scss",
         "../scss/_queries.scss"
     ],
     "names": [],

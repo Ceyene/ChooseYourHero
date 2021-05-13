@@ -1,21 +1,3 @@
-/* -------------------- Main JS ------------------ */
-
-/* ---------------- Hamburguer Menu -------------- */
-//Variables
-const burger = document.getElementById("burger");
-const burger_icon = document.getElementById("burger_icon");
-const menu = document.getElementById("menu");
-
-//When click on the burger button, it shows the menu
-burger.addEventListener("click", () => {
-  burger_icon.classList.toggle("fa-bars");
-  burger_icon.classList.toggle("fa-times");
-  menu.classList.toggle("invisible");
-  menu.classList.toggle("visible");
-});
-
-/* ----------- End of Hamburguer Menu ------------ */
-
 /* ------------------ Dark Mode -------------------- */
 //Variables
 const theme_btn = document.getElementById("theme_btn");
@@ -40,13 +22,3 @@ theme_btn.addEventListener("click", (e) => {
   }
 });
 /* -------------- End of Dark Mode ----------------- */
-
-/* ------------- Reload Landing Page --------------- */
-
-// When click logo, reload page
-logo.addEventListener("click", () => {
-  //reload page
-  location.reload();
-});
-
-/* ---------- End of Reload Landing page ----------- */

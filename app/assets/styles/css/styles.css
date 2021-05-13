@@ -6,8 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -176,20 +175,11 @@ input {
 .navbar {
   position: relative;
   background-color: #f3f5f8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 1.5rem;
   border-top: 0.31rem solid #3c1493;
   /* Size and hiding of Search Bar in Navbar */
@@ -216,19 +206,10 @@ input {
 /* Menu´s General Layout */
 .menu {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: absolute;
   top: 4.812rem;
   right: 0;
@@ -280,19 +261,10 @@ input {
 /* Input Styles */
 .search {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #3c1493;
   border-radius: 27px;
   padding: 1rem;
@@ -300,19 +272,10 @@ input {
 }
 
 .search__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 0;
   margin-bottom: 1rem;
@@ -367,19 +330,10 @@ input {
  * ------------------------------- */
 /* Section´s General Layout */
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem;
   border-bottom: 0.31rem solid #3c1493;
 }
@@ -411,13 +365,9 @@ input {
 /* Heroes Results Layout */
 .grid {
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (46%)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 46%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: repeat(auto-fit, 46%);
+  justify-content: center;
   gap: 1rem;
   margin-top: 2.88rem;
   /* Setup for later styles in hero's hover */
@@ -446,7 +396,6 @@ input {
   }
   /* Navigation Bar Styles */
   .navbar {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -458,19 +407,10 @@ input {
   }
   /*Horizontal Menu*/
   .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     visibility: visible;
     background-color: transparent;
     position: relative;
@@ -514,8 +454,7 @@ input {
   /* Favorites Section */
   /* Amount of columns in gif results */
   .grid {
-    -ms-grid-columns: (20%)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 20%);
+    grid-template-columns: repeat(auto-fit, 20%);
     margin-top: 2.25rem;
   }
   /* Size of Buttons */
