@@ -1,0 +1,30 @@
+/* ------------------------------- *
+ * --------- Hero Section -------- *
+ * ------------------------------- */
+/* Section´s General Layout */
+.hero {
+  padding: $sp-1 $sp-15;
+  text-align: center;
+
+  .main__text {
+    margin-bottom: $sp-4;
+  }
+}
+/* ----- End of Hero Section ----- */
+/*                                 */
+
+/* ------------------------------- *
+ * ----------- Footer ------------ *
+ * ------------------------------- */
+/* Section´s General Layout */
+.footer {
+  @include flexbox(row, center);
+  padding: $sp-15;
+  border-bottom: 0.31rem solid $main-color;
+
+  .small_text {
+    color: $dark-color;
+  }
+}
+/* -------- End of Footer -------- */
+/*                                 */

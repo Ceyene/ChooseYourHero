@@ -1,0 +1,42 @@
+/* --------------------------------------------------- *
+ * ----------- Results / Favorites Section ----------- *
+ * --------------------------------------------------- */
+/* Section´s General Layout */
+.favorites,
+.results {
+  padding: $sp-1 $sp-15;
+  text-align: center;
+}
+
+/* Results´s Line on Top */
+.section_line {
+  width: 25%;
+  height: 0.01rem;
+  margin: $sp-28 auto;
+  background-color: $gold-btn-color;
+}
+
+/* Heroes Results Layout */
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 46%);
+  justify-content: center;
+  gap: $sp-1;
+  margin-top: $sp-28;
+
+  /* Setup for later styles in hero's hover */
+  .hero {
+    position: relative;
+  }
+}
+
+/* Message: No Searching Results */
+.error_msg {
+  width: 80%;
+  text-align: center;
+  margin: 5% auto;
+}
+
+/* -- End of My Gifos / Favorites / Results Section -- */
+/*                                                     */

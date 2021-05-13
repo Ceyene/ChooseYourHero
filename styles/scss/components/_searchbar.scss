@@ -1,0 +1,53 @@
+/* ------------------------------- *
+ * --------- Search Bar ---------- *
+ * ------------------------------- */
+/* Input Styles */
+.search {
+  width: 100%;
+  @include flexbox(column, space-between);
+  border: 1px solid $main-color;
+  border-radius: 27px;
+  padding: $sp-1;
+  padding-bottom: 0;
+
+  &__container {
+    @include flexbox(row, space-between);
+    width: 100%;
+    padding: 0;
+    margin-bottom: $sp-1;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    width: 95%;
+    background-color: transparent;
+    margin-left: $sp-05;
+    font-size: 1rem;
+  }
+
+  &__btn {
+    i {
+      color: $gold-btn-color;
+    }
+  }
+}
+
+/* Buttons Styles */
+.search__btn,
+.right__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.right__btn {
+  i {
+    color: $main-color;
+  }
+}
+
+/* ------ End of Search Bar ------ */
+/*                                 */

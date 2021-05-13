@@ -1,0 +1,177 @@
+/* ------------------------------- *
+ * -------- Tablet Styles -------- *
+ * ------------------------------- */
+@media (min-width: 768px) {
+  /*Erase Hamburguer Menu*/
+  .burger {
+    display: none;
+  }
+
+  /* Navigation Bar Styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: $sp-1 $sp-3;
+  }
+
+  /* Logo Size */
+  .logo {
+    width: $logo-desk-size;
+  }
+
+  /*Horizontal Menu*/
+  .menu {
+    @include flexbox(row, space-between);
+    visibility: visible;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+    &__item {
+      padding: 0;
+      margin: 0 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        color: $main-color;
+        text-transform: uppercase;
+      }
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  /* Dark Theme in Horizontal Menu */
+  .dark {
+    .menu {
+      background-color: transparent;
+    }
+  }
+
+  /* Hero Section */
+
+  /* Size of paragraph in Hero */
+  .hero {
+    padding: $sp-1;
+
+    .main_title {
+      max-width: $text-size;
+      margin: $margin-center;
+    }
+  }
+
+  /* Size of search bar */
+  .search {
+    width: $text-size;
+    margin: $margin-center;
+  }
+
+  /* Favorites Section */
+
+  /* Amount of columns in gif results */
+  .grid {
+    grid-template-columns: repeat(auto-fit, 20%);
+    margin-top: $sp-25;
+  }
+
+  /* Size of Buttons */
+  .btn {
+    display: inline-block;
+    padding: $sp-1 $sp-2;
+    padding: $sp-5 auto;
+    width: auto;
+  }
+}
+
+/* ----- End of Tablet Styles ---- */
+/*                                 */
+
+/* ------------------------------- *
+ * ------- Desktop Styles -------- *
+ * ------------------------------- */
+@media (min-width: 900px) {
+  /* Text Styles */
+  .main__title {
+    @include titles(3.19rem, 3.3rem);
+  }
+
+  .section__title {
+    @include titles(2.56rem, 2.88rem);
+  }
+
+  .text {
+    @include texts(1.13rem, 1.44rem);
+  }
+
+  .small__text {
+    @include texts(1rem, 1.25rem);
+  }
+
+  /* Buttons Styles */
+  .btn,
+  .button {
+    &:hover {
+      background-color: $main-color;
+      color: $light-color;
+    }
+  }
+
+  /* Navbar Styles */
+
+  /* ------------------------------- *
+    *  Changes when doing scroll down  *
+    *  ------------------------------- */
+  html:not([data-scroll="0"]) {
+    /* Shadow at the bottom when doing scroll */
+    .navbar {
+      box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+      transition: opacity 0.5s 0.5s ease;
+    }
+  }
+  /* End of Changes when scrolling down */
+  /*                                    */
+
+  /* Menu Styles */
+  .menu {
+    padding: 0;
+    background-color: inherit;
+
+    &__item {
+      &:hover {
+        border-bottom: 2px solid $secondary-color;
+      }
+
+      a {
+        &:active {
+          color: $gold-btn-color;
+        }
+      }
+    }
+  }
+
+  /* Footer Section Styles */
+  .footer {
+    padding: $sp-2;
+  }
+}
+
+/*                                 */
+
+@media (min-width: 1100px) {
+  /* Navbar Styles */
+  .navbar {
+    padding: $sp-15 $sp-9;
+  }
+}
+
+/* ---- End of Desktop Styles ---- */
+/*                                 */
