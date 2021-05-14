@@ -2,11 +2,6 @@
  * -------- Tablet Styles -------- *
  * ------------------------------- */
 @media (min-width: 768px) {
-  /*Erase Hamburguer Menu*/
-  .burger {
-    display: none;
-  }
-
   /* Navigation Bar Styles */
   .navbar {
     padding: $sp-1 $sp-3;
@@ -27,28 +22,6 @@
     padding: 0;
     width: 100%;
     height: auto;
-
-    &__item {
-      padding: 0;
-      margin: 0 2rem;
-
-      &--themes p,
-      a {
-        color: $main-color;
-        text-transform: uppercase;
-      }
-    }
-
-    &__line {
-      display: none;
-    }
-  }
-
-  /* Dark Theme in Horizontal Menu */
-  .dark {
-    .menu {
-      background-color: transparent;
-    }
   }
 
   /* Hero Section */
@@ -67,22 +40,6 @@
   .search {
     width: $text-size;
     margin: $margin-center;
-  }
-
-  /* Favorites Section */
-
-  /* Amount of columns in gif results */
-  .grid {
-    grid-template-columns: repeat(auto-fit, 20%);
-    margin-top: $sp-25;
-  }
-
-  /* Size of Buttons */
-  .btn {
-    display: inline-block;
-    padding: $sp-1 $sp-2;
-    padding: $sp-5 auto;
-    width: auto;
   }
 }
 

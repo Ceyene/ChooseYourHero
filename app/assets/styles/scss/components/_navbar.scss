@@ -14,64 +14,20 @@
     width: $logo-mob-size;
   }
 
-  /* Size and hiding of Search Bar in Navbar */
-  .search {
-    display: none;
-    padding: $sp-1;
+  .menu {
+    &__item {
+      padding: 0;
+      margin: 0 2rem;
 
-    &__input {
-      width: 87%;
+      &--themes p,
+      a {
+        font-weight: 600;
+        color: $main-color;
+        text-transform: uppercase;
+      }
     }
   }
 }
 
 /* ---- End of Navigation Bar ---- */
 /*                                 */
-
-/* ------------------------------- *
- * ------- Hamburguer Menu ------- *
- * ------------------------------- */
-/* Menu´s General Layout */
-.menu {
-  padding: $sp-1;
-  @include flexbox(column, flex-start);
-  position: absolute;
-  top: 4.812rem;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  overflow: hidden;
-  background-color: $main-color;
-
-  &__item {
-    padding: $sp-1;
-
-    &--themes p,
-    a {
-      @include link(capitalize);
-      color: $light-color;
-    }
-  }
-
-  &__line {
-    padding: 0;
-    width: 2.56rem;
-    height: 0.01rem;
-    background-color: $light-color;
-  }
-}
-
-/* Burger Icon */
-.burger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-
-  i {
-    font-size: 1rem;
-    color: $main-color;
-  }
-}
-/* ---- End of Hamburguer Menu ---- */
-/*                                  */

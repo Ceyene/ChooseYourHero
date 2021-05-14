@@ -111,63 +111,6 @@ input {
 
 /* ---- End of General Styles ---- */
 /*                                 */
-/*       Dark Themes      */
-.dark {
-  background-color: #222326;
-  color: #f3f5f8;
-}
-
-.dark i {
-  color: #f3f5f8;
-}
-
-.dark .text {
-  color: #f3f5f8;
-}
-
-.dark .navbar {
-  background-color: #222326;
-}
-
-.dark .menu {
-  background-color: #222326;
-}
-
-.dark .menu__item a {
-  color: #f3f5f8;
-}
-
-.dark .search {
-  border-color: #f3f5f8;
-  caret-color: #f3f5f8;
-}
-
-.dark .search__input {
-  color: #f3f5f8;
-}
-
-.dark .search i {
-  color: #f3f5f8;
-}
-
-.dark .small_text {
-  color: #f3f5f8;
-}
-
-.dark .prev,
-.dark .next {
-  background-color: #f3f5f8;
-  color: #222326;
-}
-
-.dark .prev:hover,
-.dark .next:hover {
-  background-color: #222326;
-  color: #f3f5f8;
-  border-color: #f3f5f8;
-}
-
-/*   End of Dark Themes   */
 /* ------------------------------- *
  * ------- Navigation Bar -------- *
  * ------------------------------- */
@@ -182,80 +125,26 @@ input {
   align-items: center;
   padding: 1rem 1.5rem;
   border-top: 0.31rem solid #3c1493;
-  /* Size and hiding of Search Bar in Navbar */
 }
 
 .navbar .logo {
   width: 3.05rem;
 }
 
-.navbar .search {
-  display: none;
-  padding: 1rem;
+.navbar .menu__item {
+  padding: 0;
+  margin: 0 2rem;
 }
 
-.navbar .search__input {
-  width: 87%;
+.navbar .menu__item--themes p,
+.navbar .menu__item a {
+  font-weight: 600;
+  color: #3c1493;
+  text-transform: uppercase;
 }
 
 /* ---- End of Navigation Bar ---- */
 /*                                 */
-/* ------------------------------- *
- * ------- Hamburguer Menu ------- *
- * ------------------------------- */
-/* Menu´s General Layout */
-.menu {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  top: 4.812rem;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #3c1493;
-}
-
-.menu__item {
-  padding: 1rem;
-}
-
-.menu__item--themes p,
-.menu__item a {
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  font-size: 0.94rem;
-  line-height: 1.88rem;
-  text-transform: capitalize;
-  letter-spacing: 0;
-  color: #f3f5f8;
-}
-
-.menu__line {
-  padding: 0;
-  width: 2.56rem;
-  height: 0.01rem;
-  background-color: #f3f5f8;
-}
-
-/* Burger Icon */
-.burger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.burger i {
-  font-size: 1rem;
-  color: #3c1493;
-}
-
-/* ---- End of Hamburguer Menu ---- */
-/*                                  */
 /* ------------------------------- *
  * --------- Search Bar ---------- *
  * ------------------------------- */
@@ -393,6 +282,7 @@ input {
   margin: 2rem;
   background-color: #02020246;
   color: #f3f5f8;
+  max-width: 500px;
 }
 
 .pagination {
@@ -518,10 +408,6 @@ input {
  * -------- Tablet Styles -------- *
  * ------------------------------- */
 @media (min-width: 768px) {
-  /*Erase Hamburguer Menu*/
-  .burger {
-    display: none;
-  }
   /* Navigation Bar Styles */
   .navbar {
     padding: 1rem 3rem;
@@ -544,22 +430,6 @@ input {
     width: 100%;
     height: auto;
   }
-  .menu__item {
-    padding: 0;
-    margin: 0 2rem;
-  }
-  .menu__item--themes p,
-  .menu__item a {
-    color: #3c1493;
-    text-transform: uppercase;
-  }
-  .menu__line {
-    display: none;
-  }
-  /* Dark Theme in Horizontal Menu */
-  .dark .menu {
-    background-color: transparent;
-  }
   /* Hero Section */
   /* Size of paragraph in Hero */
   .welcome {
@@ -573,19 +443,6 @@ input {
   .search {
     width: 35.45rem;
     margin: 0 auto;
-  }
-  /* Favorites Section */
-  /* Amount of columns in gif results */
-  .grid {
-    grid-template-columns: repeat(auto-fit, 20%);
-    margin-top: 2.25rem;
-  }
-  /* Size of Buttons */
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    padding: 5rem auto;
-    width: auto;
   }
 }
 
