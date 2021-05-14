@@ -6,7 +6,8 @@ export function getData(props) {
     .then((json) => cbSuccess(json))
     .catch((err) => {
       let message = err.statusText || "Ups, something went wrong...";
-      document.getElementById("root").innerHTML = `
+      document.querySelector(".loader").classList.add("hide");
+      document.getElementById("heroes").innerHTML = `
             <div class="error">
                 <p>Error ${err.status}: ${message}</p>
             </div>
