@@ -75,12 +75,14 @@ input {
   color: #dd4356;
 }
 
-.no_results__title {
+.see_more_title {
   font-family: "Jura", sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: center;
   color: #dd4356;
+  cursor: pointer;
+  margin: 2rem;
 }
 
 .text {

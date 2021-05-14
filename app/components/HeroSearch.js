@@ -3,15 +3,19 @@ export function HeroSearch() {
   $search.classList.add("search");
   $search.setAttribute("id", "search");
   $search.innerHTML = `
-    <div class="search__container">
-        <button type="submit" class="search__btn hide" id="search_btn">
+    <form class="search__container">
+        <input class="search__input" id="search_input" autocomplete="off" type="search" name="search" placeholder="Write the name of your hero and click Enter...">
+        <button type="submit" class="right__btn hide" id="search_btn">
             <i id="glass" class="fas fa-search"></i>
         </button>
-        <input class="search__input" id="search_input" autocomplete="off" type="text" placeholder="Search here...">
-        <button class="right__btn" id="right_btn">
-            <i id="right_icon" class="fas fa-search"></i>
-        </button>
-    </div>
+    </form>
     `;
+
+  document.addEventListener("submit", (e) => {
+    if (!e.target.matches(".search__container")) return false;
+    e.preventDefault();
+    localStorage.setItem("HeroValue", e.target.search.value);
+    location.hash = `#/search?search=${e.target.search.value}`;
+  });
   return $search;
 }

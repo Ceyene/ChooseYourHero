@@ -111,9 +111,11 @@ input {
   color: $secondary-color;
 }
 
-.no_results__title {
+.see_more_title {
   @include titles(1.2rem, 1.8rem);
   color: $secondary-color;
+  cursor: pointer;
+  margin: $sp-2;
 }
 
 .text {
