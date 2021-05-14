@@ -3,6 +3,7 @@ import { getData } from "./app/helpers/getData.js";
 import { Header } from "./app/components/Header.js";
 import { Title } from "./app/components/Title.js";
 import { Loader } from "./app/components/Loader.js";
+import { Footer } from "./app/components/Footer.js";
 
 export function App() {
   const d = document;
@@ -13,6 +14,9 @@ export function App() {
   $root.appendChild($main);
   $main.appendChild(Title());
   $main.appendChild(Loader());
+  const $footer = d.createElement("footer");
+  $footer.appendChild(Footer());
+  $root.appendChild($footer);
 }
 
 getData({
