@@ -9,9 +9,9 @@ export function Header() {
         <nav>
             <button id="burger" class="burger"><i id="burger_icon" class="fas fa-bars"></i></button>
             <ul class="menu invisible" id="menu">
-                <li class="menu__item" id="theme_btn"><a href="#" id="theme_link">Dark Mode</a></li>
+                <li class="menu__item--themes" id="theme_btn"><p>Dark Mode</p></li>
                 <li class="menu__line"></li>
-                <li class="menu__item" id="fav_link"><a href="">My Team</a></li>
+                <li class="menu__item" id="fav_link"><a href="#/favorites">My Team</a></li>
                 <li class="menu__line"></li>
             </ul>
         </nav>

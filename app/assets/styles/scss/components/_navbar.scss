@@ -1,28 +1,28 @@
 /* ------------------------------- *
  * ------- Navigation Bar -------- *
  * ------------------------------- */
- /* Section´s General Layout */
+/* Section´s General Layout */
 .navbar {
-    position: relative;
-    background-color: $light-color;
-    display: flex;
-    @include flexbox(row, space-between);
-    padding: $sp-1 $sp-15;
-    border-top: 0.31rem solid $main-color;
+  position: relative;
+  background-color: $light-color;
+  display: flex;
+  @include flexbox(row, space-between);
+  padding: $sp-1 $sp-15;
+  border-top: 0.31rem solid $main-color;
 
-    .logo {
-        width: $logo-mob-size;
+  .logo {
+    width: $logo-mob-size;
+  }
+
+  /* Size and hiding of Search Bar in Navbar */
+  .search {
+    display: none;
+    padding: $sp-1;
+
+    &__input {
+      width: 87%;
     }
-
-    /* Size and hiding of Search Bar in Navbar */
-    .search {
-        display: none;
-        padding: $sp-1;
-
-        &__input {
-          width: 87%;
-        }
-    }
+  }
 }
 
 /* ---- End of Navigation Bar ---- */
@@ -33,45 +33,45 @@
  * ------------------------------- */
 /* Menu´s General Layout */
 .menu {
+  padding: $sp-1;
+  @include flexbox(column, flex-start);
+  position: absolute;
+  top: 4.812rem;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  overflow: hidden;
+  background-color: $main-color;
+
+  &__item {
     padding: $sp-1;
-    @include flexbox(column, flex-start);
-    position: absolute;
-    top: 4.812rem;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    overflow: hidden;
-    background-color: $main-color;
 
-    &__item {
-        padding: $sp-1;
-
-        a {
-          @include link(capitalize);
-          color: $light-color;
-        }
+    &--themes p,
+    a {
+      @include link(capitalize);
+      color: $light-color;
     }
-
-    &__line {
-      padding: 0;
-      width: 2.56rem;
-      height: 0.01rem;
-      background-color: $light-color;
-    }
-
   }
 
-  /* Burger Icon */
+  &__line {
+    padding: 0;
+    width: 2.56rem;
+    height: 0.01rem;
+    background-color: $light-color;
+  }
+}
+
+/* Burger Icon */
 .burger {
-    background-color: transparent;
-    border: none;
-    outline: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
 
-    i {
-      font-size: 1rem;
-      color: $main-color;
-    }
+  i {
+    font-size: 1rem;
+    color: $main-color;
   }
+}
 /* ---- End of Hamburguer Menu ---- */
 /*                                  */

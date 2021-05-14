@@ -224,6 +224,7 @@ input {
   padding: 1rem;
 }
 
+.menu__item--themes p,
 .menu__item a {
   font-family: "Jura", sans-serif;
   font-weight: 700;
@@ -311,7 +312,8 @@ input {
 /* ------ End of Search Bar ------ */
 /*                                 */
 .loader {
-  width: 5vw;
+  width: 5rem;
+  margin: 5.75rem;
   animation: rotation 1.5s infinite linear;
 }
 
@@ -431,9 +433,6 @@ input {
   }
   /* Navigation Bar Styles */
   .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
     padding: 1rem 3rem;
   }
   /* Logo Size */
@@ -456,11 +455,9 @@ input {
   }
   .menu__item {
     padding: 0;
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
-  .menu__item:first-child {
-    margin-left: 0;
-  }
+  .menu__item--themes p,
   .menu__item a {
     color: #3c1493;
     text-transform: uppercase;
@@ -542,10 +539,11 @@ input {
     padding: 0;
     background-color: inherit;
   }
-  .menu__item:hover {
+  .menu__item:hover, .menu__item--themes:hover {
     border-bottom: 2px solid #dd4356;
+    cursor: pointer;
   }
-  .menu__item a:active {
+  .menu__item a:active, .menu__item--themes a:active {
     color: #ab6e0d;
   }
   /* Footer Section Styles */

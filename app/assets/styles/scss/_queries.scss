@@ -9,9 +9,6 @@
 
   /* Navigation Bar Styles */
   .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
     padding: $sp-1 $sp-3;
   }
 
@@ -33,12 +30,9 @@
 
     &__item {
       padding: 0;
-      margin: 0 1rem;
+      margin: 0 2rem;
 
-      &:first-child {
-        margin-left: 0;
-      }
-
+      &--themes p,
       a {
         color: $main-color;
         text-transform: uppercase;
@@ -132,9 +126,11 @@
     padding: 0;
     background-color: inherit;
 
-    &__item {
+    &__item,
+    &__item--themes {
       &:hover {
         border-bottom: 2px solid $secondary-color;
+        cursor: pointer;
       }
 
       a {
