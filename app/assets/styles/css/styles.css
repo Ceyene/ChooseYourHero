@@ -314,12 +314,12 @@ input {
  * --------- Hero Section -------- *
  * ------------------------------- */
 /* Section´s General Layout */
-.hero {
+.welcome {
   padding: 1rem 1.5rem;
   text-align: center;
 }
 
-.hero .main__text {
+.welcome .main__text {
   margin-bottom: 4rem;
 }
 
@@ -439,10 +439,10 @@ input {
   }
   /* Hero Section */
   /* Size of paragraph in Hero */
-  .hero {
+  .welcome {
     padding: 1rem;
   }
-  .hero .main_title {
+  .welcome .main_title {
     max-width: 35.45rem;
     margin: 0 auto;
   }
