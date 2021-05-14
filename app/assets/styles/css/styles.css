@@ -381,6 +381,33 @@ input {
   cursor: pointer;
 }
 
+.pagination {
+  display: flex;
+  width: 50vw;
+  margin: 1rem auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pagination .button__prev,
+.pagination .button__next {
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 0.94rem;
+  line-height: 1.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  width: auto;
+  border: 1px solid #3c1493;
+  border-radius: 1.9rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+}
+
 /* ------------------------------- *
  * --------- Hero Section -------- *
  * ------------------------------- */

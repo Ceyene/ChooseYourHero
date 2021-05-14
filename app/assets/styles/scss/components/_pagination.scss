@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  width: 50vw;
+  margin: $sp-1 auto;
+  justify-content: space-around;
+  align-items: center;
+
+  .button__prev,
+  .button__next {
+    @include link(uppercase);
+    margin: $sp-1 auto;
+    padding: $sp-05 $sp-1;
+    width: auto;
+    border: 1px solid $main-color;
+    border-radius: 1.9rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+  }
+}
