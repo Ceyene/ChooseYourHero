@@ -1,11 +1,32 @@
 /* --------------------------------------------------- *
  * ----------- Results / Favorites Section ----------- *
  * --------------------------------------------------- */
+/* Main container Layout */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem;
+}
+
 /* Section´s General Layout */
 .favorites,
 .results {
   padding: $sp-1 $sp-15;
   text-align: center;
+}
+
+.error {
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+  background-color: $gold-btn-color;
+  opacity: 0.65;
+
+  p {
+    font-size: 1.75rem;
+    color: $light-color;
+  }
 }
 
 /* Results´s Line on Top */

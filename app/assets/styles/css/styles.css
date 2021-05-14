@@ -310,6 +310,20 @@ input {
 
 /* ------ End of Search Bar ------ */
 /*                                 */
+.loader {
+  width: 5vw;
+  animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /* ------------------------------- *
  * --------- Hero Section -------- *
  * ------------------------------- */
@@ -347,11 +361,32 @@ input {
 /* --------------------------------------------------- *
  * ----------- Results / Favorites Section ----------- *
  * --------------------------------------------------- */
+/* Main container Layout */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem;
+}
+
 /* Section´s General Layout */
 .favorites,
 .results {
   padding: 1rem 1.5rem;
   text-align: center;
+}
+
+.error {
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ab6e0d;
+  opacity: 0.65;
+}
+
+.error p {
+  font-size: 1.75rem;
+  color: #f3f5f8;
 }
 
 /* Results´s Line on Top */
