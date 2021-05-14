@@ -1,23 +1,23 @@
 /* ---------------- Hamburguer Menu -------------- */
-//Variables
-const burger = document.getElementById("burger");
-const burger_icon = document.getElementById("burger_icon");
-const menu = document.getElementById("menu");
+const BURGER = document.getElementById("burger");
+const BURGER_ICON = document.getElementById("burger_icon");
+const MENU = document.getElementById("menu");
 
 //When click on the burger button, it shows the menu
-burger.addEventListener("click", () => {
-  burger_icon.classList.toggle("fa-bars");
-  burger_icon.classList.toggle("fa-times");
-  menu.classList.toggle("invisible");
-  menu.classList.toggle("visible");
+BURGER.addEventListener("click", () => {
+  BURGER_ICON.classList.toggle("fa-bars");
+  BURGER_ICON.classList.toggle("fa-times");
+  MENU.classList.toggle("invisible");
+  MENU.classList.toggle("visible");
 });
 
 /* ----------- End of Hamburguer Menu ------------ */
 
 /* ---------- Logo Reloads Landing Page ---------- */
+const LOGO = document.getElementById("logo");
 
-// When click logo, reload page
-logo.addEventListener("click", () => {
+// A click on the logo reloads the page
+LOGO.addEventListener("click", () => {
   //reload page
   location.reload();
 });
