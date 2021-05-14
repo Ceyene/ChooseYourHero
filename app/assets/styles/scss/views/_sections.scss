@@ -11,7 +11,7 @@
 
 /* Section´s General Layout */
 .favorites,
-.results {
+.heroes {
   padding: $sp-1 $sp-15;
   text-align: center;
 }
@@ -38,18 +38,13 @@
 }
 
 /* Heroes Results Layout */
-.grid {
+.heroes {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 46%);
-  justify-content: center;
-  gap: $sp-1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: $sp-28;
-
-  /* Setup for later styles in hero's hover */
-  .hero {
-    position: relative;
-  }
 }
 
 /* Message: No Searching Results */
