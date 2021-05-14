@@ -1,0 +1,24 @@
+.hero {
+  &__page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $sp-2 $sp-1;
+
+    &--img {
+      width: 30vw;
+      min-width: 230px;
+    }
+    .section__title {
+      margin: 2rem;
+    }
+
+    .text {
+      padding: 1rem;
+      margin: 2rem;
+      background-color: #02020246;
+      color: $light-color;
+    }
+  }
+}

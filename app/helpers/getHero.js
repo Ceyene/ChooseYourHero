@@ -1,21 +1,18 @@
 import { getData } from "./getData.js";
-import { HeroCard } from "../components/HeroCard.js";
+import { Hero } from "../components/Hero.js";
 import api from "./marvel_api.js";
 
-export function getHeroes(offset) {
+export function getHero(id) {
   const { ENDPOINT, ALL_HEROES, PUBLIC_KEY } = api;
-  const URL_ALL = `${ENDPOINT}${ALL_HEROES}?offset=${offset}&apikey=${PUBLIC_KEY}`;
-
+  const URL_BY_CHARACTER = `${ENDPOINT}${ALL_HEROES}/${id}?apikey=${PUBLIC_KEY}`;
   //making data petitions
   getData({
-    url: URL_ALL,
+    url: URL_BY_CHARACTER,
     cbSuccess: ({ data }) => {
-      let heroesList = data.results;
+      const hero = data.results[0];
       let html = "";
       document.querySelector(".loader").classList.add("hide");
-      heroesList.forEach((hero) => {
-        html += HeroCard(hero);
-      });
+      html += Hero(hero);
       document.getElementById("heroes").innerHTML = html;
     },
   });

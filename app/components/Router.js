@@ -4,6 +4,7 @@ import { HeroSearch } from "./HeroSearch.js";
 import { Heroes } from "./Heroes.js";
 import { Loader } from "./Loader.js";
 import { PaginationButtons } from "./PaginationButtons.js";
+import { getHero } from "../helpers/getHero.js";
 
 export function Router() {
   const d = document;
@@ -23,6 +24,10 @@ export function Router() {
   } else if (hash.includes("#/favorites")) {
     $mainContainer.appendChild(Loader());
   } else {
+    $mainContainer.appendChild(Heroes());
+    const id = localStorage.getItem("HeroId");
+    const heroId = id.substring(0, id.length);
+    getHero(heroId);
     $mainContainer.appendChild(Loader());
   }
 }
