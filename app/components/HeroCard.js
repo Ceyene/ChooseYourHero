@@ -15,7 +15,6 @@ export function HeroCard(props) {
             <a href="#/${id}">
                 <img class="hero__img" src=${img} alt=${name} id=${id} />
             </a>
-            <img class="hero__info--button" src="/app/assets/images/favorites.svg" alt="Add to my favorites team"/>
             <a href="#/${id}">
                 <h3 class="hero__info--name">${name}</h3>
             </a>

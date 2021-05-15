@@ -6,6 +6,7 @@ import { Heroes } from "./Heroes.js";
 import { Loader } from "./Loader.js";
 import { PaginationButtons } from "./PaginationButtons.js";
 import { getHero } from "../helpers/getHero.js";
+import { Pagination } from "../helpers/pagination.js";
 
 export function Router() {
   const d = document;
@@ -16,7 +17,7 @@ export function Router() {
 
   if (!hash || hash === "#/") {
     //adding sections components to main
-    getHeroes(0);
+    getHeroes();
     $mainContainer.appendChild(Title());
     $mainContainer.appendChild(HeroSearch());
     $mainContainer.appendChild(Heroes());
@@ -30,7 +31,7 @@ export function Router() {
     if (!query) {
       return false;
     }
-    getHeroByName(query);
+    getHeroByName(query, 0);
   } else {
     $mainContainer.appendChild(Heroes());
     const id = localStorage.getItem("HeroId");

@@ -10,10 +10,24 @@ export function getHeroes(offset) {
   getData({
     url: URL_ALL,
     cbSuccess: ({ data }) => {
-      let heroesList = data.results;
+      let { results, offset, total, count } = data;
       let html = "";
+      let $prevlink;
+      let $nextlink;
       document.querySelector(".loader").classList.add("hide");
-      heroesList.forEach((hero) => {
+      //pagination
+      $prevlink =
+        offset > 0
+          ? `<button class="button__prev" id="button-prev">Previous</button>`
+          : "";
+      $nextlink =
+        total > count
+          ? `<button class="button__next" id="button-next">Next</button>`
+          : "";
+      const $paginationContainer = document.querySelector(".pagination");
+      $paginationContainer.innerHTML = $prevlink + "" + $nextlink;
+      //rendering results
+      results.forEach((hero) => {
         html += HeroCard(hero);
       });
       document.getElementById("heroes").innerHTML = html;

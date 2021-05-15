@@ -13,20 +13,6 @@
   .logo {
     width: $logo-mob-size;
   }
-
-  .menu {
-    &__item {
-      padding: 0;
-      margin: 0 2rem;
-
-      &--themes p,
-      a {
-        font-weight: 600;
-        color: $main-color;
-        text-transform: uppercase;
-      }
-    }
-  }
 }
 
 /* ---- End of Navigation Bar ---- */

@@ -12,18 +12,6 @@
     width: $logo-desk-size;
   }
 
-  /*Horizontal Menu*/
-  .menu {
-    @include flexbox(row, space-between);
-    visibility: visible;
-    background-color: transparent;
-    position: relative;
-    top: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-
   /* Hero Section */
 
   /* Size of paragraph in Hero */

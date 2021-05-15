@@ -1,20 +1,23 @@
 import { getHeroes } from "./getHeroes.js";
+import { getHeroByName } from "./getHeroByName.js";
 
-export function pagination() {
-  const $nextButton = document.getElementById("button-next");
-  const $prevButton = document.getElementById("button-prev");
+export function Pagination() {
   let offset = 0;
-  if (offset > 0) {
-    $prevButton.classList.remove("invisible");
-    $prevButton.addEventListener("click", () => {
+  //next page
+  document.addEventListener("click", (e) => {
+    if (e.target.matches(".button__next")) {
+      e.preventDefault();
+      offset++;
+      getHeroes(offset);
+    }
+  });
+
+  //previous page
+  document.addEventListener("click", (e) => {
+    if (e.target.matches(".button__prev")) {
+      e.preventDefault();
       offset--;
       getHeroes(offset);
-    });
-  }
-
-  $nextButton.addEventListener("click", () => {
-    offset++;
-    getHeroes(offset);
-    console.log(offset);
+    }
   });
 }
