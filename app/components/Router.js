@@ -6,11 +6,9 @@ import { Heroes } from "./Heroes.js";
 import { Loader } from "./Loader.js";
 import { PaginationButtons } from "./PaginationButtons.js";
 import { getHero } from "../helpers/getHero.js";
-import { Pagination } from "../helpers/pagination.js";
 
 export function Router() {
   const d = document;
-  const w = window;
   let { hash } = location;
   const $mainContainer = d.getElementById("main");
   $mainContainer.innerHTML = "";
@@ -24,6 +22,7 @@ export function Router() {
     $mainContainer.appendChild(Loader());
     $mainContainer.appendChild(PaginationButtons());
   } else if (hash.includes("#/search")) {
+    //adding results components to search section
     let query = localStorage.getItem("HeroValue");
     $mainContainer.appendChild(HeroSearch());
     $mainContainer.appendChild(Heroes());
@@ -33,6 +32,7 @@ export function Router() {
     }
     getHeroByName(query, 0);
   } else {
+    //individual hero page
     $mainContainer.appendChild(Heroes());
     const id = localStorage.getItem("HeroId");
     const heroId = id.substring(0, id.length);

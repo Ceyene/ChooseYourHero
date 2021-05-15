@@ -1,5 +1,4 @@
 import { getHeroes } from "./getHeroes.js";
-import { getHeroByName } from "./getHeroByName.js";
 
 export function Pagination() {
   let offset = 0;
